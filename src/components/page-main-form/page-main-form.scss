@@ -1,0 +1,47 @@
+@import '../app/mixins';
+@import '../app/variables';
+
+.page-main-form {
+  &__count {
+    grid-row: 2/3;
+  }
+  &__radio-group {
+    grid-column: 2/3;
+  }
+  &__input {
+    display: none;
+  }
+  &__label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 3rem;
+  }
+  &__radio-button {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid $color-grad-orange1;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -0.4rem;
+    &::after {
+      content: '';
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-grad-orange1;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+  }
+  &__input:checked ~ &__label &__radio-button::after {
+    opacity: 1;
+  }
+}

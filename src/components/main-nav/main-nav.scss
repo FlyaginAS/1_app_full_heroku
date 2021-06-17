@@ -1,0 +1,41 @@
+@import '../app//mixins';
+@import '../app//variables';
+
+.main-nav {
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  &__item {
+  }
+
+  &__item:hover &__span {
+    text-shadow: 0 0 10px $color-grad-orange1;
+  }
+
+  &__link {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;
+    background-image: linear-gradient(
+      to right,
+      $color-grad-orange1,
+      $color-grad-orange2
+    );
+    border-radius: 50%;
+
+    //fill: $color-main-orange;
+    //stroke: $color-main-orange;
+  }
+  &__span {
+  }
+}

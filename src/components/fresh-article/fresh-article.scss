@@ -1,0 +1,34 @@
+@import '../app/mixins';
+@import '../app/variables';
+
+.fresh-article {
+  &__header {
+  }
+  &__strong {
+  }
+  &__time {
+    color: $color-button-font;
+  }
+  &__h2 {
+    font-size: 4rem;
+    line-height: 1;
+    margin: 1rem 0 4rem 0;
+  }
+  &__meta {
+    margin-bottom: 4rem;
+  }
+  &__content {
+    margin-bottom: 4rem;
+  }
+  &__paragraph {
+    margin-bottom: 4rem;
+  }
+  &__link {
+  }
+  &__tags {
+  }
+  &__tag {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+}

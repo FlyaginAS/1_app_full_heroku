@@ -1,0 +1,24 @@
+@import '../app//mixins';
+@import '../app/variables';
+
+.tag {
+  &,
+  &:link,
+  &:visited {
+    //font-size: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-button-font;
+    text-decoration: none;
+    //padding: 0.5rem 1rem;
+    border: 3px solid $color-button-border;
+    border-radius: 5rem;
+  }
+  &:hover,
+  &:active {
+    border: 3px solid white;
+    background: $main-gradient;
+    @include text-grad;
+  }
+}

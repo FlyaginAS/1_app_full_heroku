@@ -1,0 +1,100 @@
+@import '../app//mixins';
+@import '../app/variables';
+
+//meta article information******************************************
+.article-meta {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  & > * {
+    margin-right: 2rem;
+  }
+  &__author-avatar {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+  }
+  &__author-section {
+    display: flex;
+    flex-direction: column;
+  }
+  &__author {
+    color: $color-button-font;
+  }
+  &__name {
+  }
+  &__comments-section {
+    flex-direction: column;
+  }
+  &__comments {
+    color: $color-button-font;
+  }
+  &__comments-count {
+  }
+  &__comments-link {
+  }
+}
+//article**********************************************************
+.article {
+  grid-area: 2/2/3/3;
+  &__header {
+    display: grid;
+    margin-bottom: 3rem;
+  }
+  &__h2 {
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    max-width: 70rem;
+    grid-row: 1/2;
+  }
+  &__author-section {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: max-content;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__author-avatar {
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  &__author {
+    color: $color-button-font;
+  }
+  &__author-name {
+    color: white;
+  }
+
+  &__meta-section {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 20rem;
+    margin-left: 30rem;
+    display: flex;
+    flex-flow: row wrap;
+    color: $color-button-font;
+  }
+
+  &__meta-date {
+    color: white;
+    margin-top: -10px;
+  }
+  &__tags {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-row: 3/4;
+    width: 60rem;
+  }
+  &__tag {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  &__main {
+    color: $color-font-dimmed;
+    max-width: 100rem;
+  }
+
+  &__footer {
+  }
+}

@@ -1,0 +1,32 @@
+@import '../app/mixins';
+@import '../app/variables';
+
+.site-logo {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    background: linear-gradient(
+      to right,
+      $color-grad-orange1,
+      $color-grad-orange2
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &:hover,
+  &:active {
+  }
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: $color-main-orange;
+    color: $color-main-orange;
+  }
+  &__text {
+    //text-transform: uppercase;
+    font-weight: 500;
+    font-size: 4rem;
+    color: $color-main-orange;
+  }
+}

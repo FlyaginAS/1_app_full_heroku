@@ -1,0 +1,116 @@
+@import '../app/mixins';
+@import '../app/variables';
+
+.page-header {
+  display: grid;
+  grid-template-columns: 220px 1fr 350px;
+  align-items: center;
+  align-content: center;
+  padding: 1rem 0;
+  margin-bottom: 8rem;
+}
+/*site logo********************************************************/
+// .site-logo {
+//   &,
+//   &:link,
+//   &:visited {
+//     text-decoration: none;
+//     background: linear-gradient(
+//       to right,
+//       $color-grad-orange1,
+//       $color-grad-orange2
+//     );
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//   }
+//   &:hover,
+//   &:active {
+//   }
+//   &__icon {
+//     width: 4rem;
+//     height: 4rem;
+//     fill: $color-main-orange;
+//     color: $color-main-orange;
+//   }
+//   &__text {
+//     //text-transform: uppercase;
+//     font-weight: 500;
+//     font-size: 4rem;
+//     color: $color-main-orange;
+//   }
+// }
+/*main nav****************************************************/
+// .main-nav {
+//   &__list {
+//     list-style: none;
+//     display: grid;
+//     grid-template-columns: repeat(6, 1fr);
+//   }
+//   &__item {
+//   }
+
+//   &__item:hover &__span {
+//     text-shadow: 0 0 10px $color-grad-orange1;
+//   }
+
+//   &__link {
+//     color: white;
+//     display: flex;
+//     flex-direction: column;
+//     justify-items: center;
+//     align-items: center;
+//     text-decoration: none;
+//   }
+//   &__icon {
+//     width: 5rem;
+//     height: 5rem;
+//     padding: 0.5rem;
+//     background-image: linear-gradient(
+//       to right,
+//       $color-grad-orange1,
+//       $color-grad-orange2
+//     );
+//     border-radius: 50%;
+
+//     //fill: $color-main-orange;
+//     //stroke: $color-main-orange;
+//   }
+//   &__span {
+//   }
+// }
+/*search*****************************************************/
+// .search {
+//   display: flex;
+//   align-items: center;
+//   &__input {
+//     width: 350px;
+//     font: inherit;
+//     display: block;
+//     padding: 0.5rem 2rem;
+//     background-color: $color-input-back;
+//     border: 2px solid $color-button-border;
+//     border-radius: 5rem;
+//   }
+//   &__button {
+//     display: block;
+//     padding: 0.5rem 1.2rem;
+//     border: none;
+//     margin-left: -5rem;
+//     background-image: linear-gradient(
+//       to right,
+//       $color-grad-orange1,
+//       $color-grad-orange2
+//     );
+//     border-radius: 2rem 5rem 5rem 2rem;
+//   }
+//   &__button:hover &__icon {
+//     transform: rotate(90deg);
+//   }
+//   &__icon {
+//     width: 3rem;
+//     height: 3rem;
+//     color: white;
+//     fill: white;
+//     transition: all 0.3s;
+//   }
+// }

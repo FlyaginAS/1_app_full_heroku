@@ -1,0 +1,53 @@
+@import '../app/mixins';
+@import '../app//variables';
+/**page main******************************************************/
+.page-main {
+  display: grid;
+  grid-template-columns: 23rem 1fr;
+  grid-gap: 3rem;
+}
+.page-main-header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.page-main-form {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-column-gap: 3rem;
+}
+
+.page-main-side-nav {
+  grid-row: 2/3;
+}
+.page-main-content {
+  min-height: 100vh;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/**page main******************************************************/
+.resource {
+  width: 32rem;
+  &:not(:last-child) {
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+  }
+  &__logo {
+    max-width: 8rem;
+  }
+  &__heading {
+  }
+  &__link {
+  }
+  &__text {
+    color: $color-font-dimmed;
+  }
+}
+/**page main******************************************************/
+/**page main******************************************************/
+/**page main******************************************************/

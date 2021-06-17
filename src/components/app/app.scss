@@ -1,0 +1,76 @@
+@import './mixins';
+@import './variables';
+
+/*base*********************************************************/
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  background-color: $color-main-back;
+  color: white;
+  padding: 0 4rem;
+  &::-webkit-scrollbar {
+    width: 2rem;
+    background: $color-button-border;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      to bottom,
+      $color-grad-orange1,
+      $color-grad-orange2
+    );
+    border-radius: 5rem;
+    box-shadow: inset 3px 1px 3px rgba(255, 255, 255, 0.2),
+      inset -3px -1px 3px rgba(0, 0, 0, 0.2);
+  }
+}
+::selection {
+  color: white;
+  background-color: $color-main-orange;
+}
+
+/*typography*******************************************************/
+.body {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.page-header {
+}
+.page-main {
+}
+.page-footer {
+}
+
+/*main link******************************************************/
+.main-link {
+  &,
+  &:link,
+  &:visited {
+    background: linear-gradient(
+      to right,
+      $color-grad-orange1,
+      $color-grad-orange2
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid $color-grad-orange1;
+  }
+  &:hover,
+  &:active {
+    border-bottom: 1px solid white;
+  }
+}
