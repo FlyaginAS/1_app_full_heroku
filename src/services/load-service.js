@@ -1,7 +1,7 @@
 export default class LoadService {
   //обращение к локалхосту так http://localhost:3000/api/v1/articles
-  _apiBase = 'http://localhost:3000/api/v1';
-  // _apiBase = 'https://glacial-coast-28950.herokuapp.com/api/v1';
+  // _apiBase = 'http://localhost:3000/api/v1';
+  _apiBase = 'https://ancient-woodland-50610..herokuapp.com/api/v1';
 
   getResource = async (url) => {
     const res = await fetch(`${this._apiBase}${url}`);
