@@ -1,6 +1,7 @@
 {
   "name": "4me-react",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "main": "webpack.config.js",
   "dependencies": {
