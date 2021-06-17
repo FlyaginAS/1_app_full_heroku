@@ -1,4 +1,5 @@
 const express = require('express');
+const path=require('path');
 const cors = require('cors');
 const morgan = require('morgan');
 const articleRouter = require('./routes/articleRoutes');
@@ -10,7 +11,8 @@ const sourceRouter = require('./routes/sourceRoutes');
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static(`${__dirname}/public`));
+// app.use(express.static(`${__dirname}/public`));
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(morgan('dev'));
 // app.use((req, res, next) => {
 //   console.log('this is my middleware');
